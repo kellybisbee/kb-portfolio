@@ -1,66 +1,182 @@
 html, body{
-   overflow-x: hidden;
+    overflow-x: hidden;
+    height:100%;
  }
 
  body{
-   display: grid;
+    display: grid;
  }
 
 header{
-  min-height: 666px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-image:url(../images/intro-background1x-noblur.png);
+    min-height: 666px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image:url(../images/intro-background1x-noblur.png);
 }
 
 #kb-logo{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  display: flex;
-  justify-content: center;
-  background-color: green;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    background-color: green;
 }
 
 #kb-logo img{
-  height: 80px;
-  width: 80px;
-  padding-top: 25px;
+    height: 80px;
+    width: 80px;
+    padding-top: 25px;
 }
 
 nav {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 52px;
-  padding-left: 10px;
-  padding-right:10px;
-  background-color: pink;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 52px;
+    padding-left: 10px;
+    padding-right:10px;
+    background-color: pink;
 }
 
 .hero {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background-color: yellow;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 .hero h1 {
-  background-color: blue;
+    background-color: blue;
+    padding-top: 100px;
+    padding-left: 220px;
+    font-size:90px;
 }
 
 .hero span {
-  background-color: orange;
+    background-color: orange;
+    padding-top: 220px;
+    padding-left: 50px;
 }
 
 .hero h4 {
-  background-color: red;
+    background-color: red;
 }
 
 .hero h5 {
-  background-color: white;
+    background-color: white;
+}
+
+#green-bar{
+    background-color: green;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    display: flex;
+    justify-content: center;
+}
+
+#green-bar h4{
+    font-size: 28px;
+}
+
+#work {
+    background-image:url(../images/work-background-topography.png);
+    height: 100%;
+}
+
+
+.beginwell {
+    position: relative;
+    margin-top: 220px;
+}
+
+.keepsy {
+    position: relative;
+    margin-left: 728px;
+    margin-top: -258px;
+    margin-bottom: 220px;
+}
+
+.beginwell .overlay-box {
+    position: absolute;
+    top: 64px;
+    width: 674px;
+    bottom: 64px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.keepsy .overlay-box {
+    position: absolute;
+    top: 64px;
+    left: 36px;
+    width: 674px;
+    bottom: 64px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.overlay-box .overlay-box-content {
+    margin-left: 148px;
+    margin-top: 75px;
+}
+
+.beginwell {
+    margin-top: 220px;
+}
+
+.keepsy {
+    margin-left: 728px;
+}
+
+#about-bar {
+    background-color: rgba(250, 130, 90, 0.8);
+    width: 80%;
+}
+
+#about-bar h4 {
+    font-size: 28px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    margin-left: 148px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about-me {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about-me img {
+    width: auto;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: -125px;
+}
+
+.about-me .btn {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 148px;
+}
+
+.about-me p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 80px;
+    margin-left: 148px;
+    margin-right: 242px;
+}
+
+#footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: red;
 }
