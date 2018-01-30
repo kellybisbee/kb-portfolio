@@ -6,7 +6,7 @@ html, body{
 header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 #kb-logo {
@@ -14,7 +14,7 @@ header {
     grid-column-end: 3;
     display: flex;
     justify-content: center;
-    background-color: green;
+    /*background-color: green;*/
 }
 
 #kb-logo img {
@@ -31,7 +31,7 @@ nav {
     padding-top: 52px;
     padding-left: 10px;
     padding-right:10px;
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
 #case-study-intro {
@@ -39,7 +39,7 @@ nav {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    background-color: pink;
+    /*background-color: pink;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +107,7 @@ h1 {
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     flex-direction: column;
 }
@@ -136,31 +136,29 @@ h1 {
 
 .sub-section {
     padding-top: 80px;
-    display: flex;
-    flex-direction: column;
 }
 
 .sub-section-title-bar {
     background-color: rgba(247, 164, 136, 0.8);
     padding-right: 21.25%;
-    width: 69.4%;
+    width: 54.7%;
     height: 10px;
     margin-top: -32px;
 }
 
-.sub-section h6, .sub-section p {
+.sub-section h6 {
     padding-left: 148px;
     padding-right: 21.25%;
     margin-right: 38%;
     z-index:0;
 }
 
-aside {
-    background-color: blue;
-    align-self: flex-end;
-    margin-left: 90%;
+.sub-section-content {
+    display: flex;
+    flex-flow: row;
 }
 
-aside p {
-    padding-left: 0px;
+.sub-section-content > aside {
+    background-color: blue;
+    order: 2;
 }
