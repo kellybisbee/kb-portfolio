@@ -1,9 +1,15 @@
-html, body{
+html, body {
     overflow-x: hidden;
-    height:100%;
+    height: 100%;
  }
 
-header {
+ article {
+    display: grid;
+ }
+
+.case-study header {
+    grid-column-start: 1;
+    grid-column-end: 4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /*background-color: blue;*/
@@ -18,9 +24,7 @@ header {
 }
 
 #kb-logo img {
-    height: 80px;
-    width: 80px;
-    padding-top: 25px;
+    padding: 2em;
 }
 
 nav {
@@ -28,9 +32,7 @@ nav {
     grid-column-end: 4;
     display: flex;
     justify-content: space-around;
-    padding-top: 52px;
-    padding-left: 10px;
-    padding-right:10px;
+    padding: 4em;
     /*background-color: pink;*/
 }
 
@@ -43,8 +45,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 2em;
 }
 
 #intro-bar {
@@ -61,15 +62,20 @@ h1 {
 }
 
 .intro-content {
-    padding-top: 126px;
+    padding-top: 4em;
+    padding-left: 4em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
+.intro-content h6 {
+    padding-left: 2em;
+}
+
 #case-study-intro .btn {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 #problem-solution {
@@ -77,16 +83,36 @@ h1 {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-top: 8em;
     background-image:url(../images/prob-solution-background-image-compressed.png);
-    height: 563px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
 
-#problem {
+#problem-solution .box-content {
+    background-color: rgba(255,255,255, 0.8);
+    padding-left: 148px;
+    margin-top: 4em;
+    margin-bottom: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 4em;
+}
+
+#problem-solution > #solution {
+    margin-top: 10em;
+    margin-bottom: 4em;
+}
+
+/*#problem {
     position: relative;
 }
 
 #solution {
     position: relative;
+    padding-bottom: 8em;
 }
 
 .overlay-box {
@@ -100,7 +126,7 @@ h1 {
 #solution .overlay-box {
     margin-left: 710px;
     margin-top: -290px;
-}
+}*/
 
 #discovery {
     grid-column-start: 1;
@@ -110,11 +136,11 @@ h1 {
     /*background-color: red;*/
     display: flex;
     flex-direction: column;
+    margin-top: 8em;
 }
 
 .section-intro {
-    padding-top: 100px;
-    margin-right: 21.25%;
+    margin-right: 22em;
 }
 
 .section-title-bar {
@@ -131,25 +157,23 @@ h1 {
 
 .section-intro p {
     padding-left: 148px;
-    margin-right: 38%;
+    margin-right: 16em;
 }
 
 .sub-section {
-    padding-top: 80px;
+    margin-top: 2em;
 }
 
 .sub-section-title-bar {
     background-color: rgba(247, 164, 136, 0.8);
-    padding-right: 21.25%;
-    width: 54.7%;
     height: 10px;
     margin-top: -32px;
+    margin-right: 32em;
 }
 
 .sub-section h6 {
     padding-left: 148px;
-    padding-right: 21.25%;
-    margin-right: 38%;
+    margin-right: 24em;
     z-index:0;
 }
 
@@ -158,7 +182,13 @@ h1 {
     flex-flow: row;
 }
 
+.sub-section-content {
+    padding-left: 148px;
+    margin-right: 16em;
+}
+
 .sub-section-content > aside {
     background-color: blue;
     order: 2;
+    margin-top: 8em;
 }
