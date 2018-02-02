@@ -3,11 +3,11 @@ html, body {
     height:100%;
  }
 
- /*body{
+ body{
     display: grid;
- }*/
+ }
 
-header {
+#homepage header {
     min-height: 666px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -39,7 +39,7 @@ nav {
     /*background-color: pink;*/
 }
 
-.hero {
+#hero {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -50,125 +50,124 @@ nav {
 
 }
 
-.hero h1 {
+#hero h1 {
     /*background-color: blue;*/
     padding-top: 100px;
     padding-left: 220px;
     font-size:90px;
 }
 
-.hero span {
+#hero span {
     /*background-color: orange;*/
     padding-top: 220px;
     padding-left: 50px;
 }
 
-.hero h4 {
+#hero h4 {
     /*background-color: red;*/
 }
 
-.hero h5 {
+#hero h5 {
     /*background-color: white;*/
 }
 
-#green-bar{
+#feature-bar{
     background-color: green;
-    padding-top: 46px;
-    padding-bottom: 46px;
     display: flex;
     justify-content: center;
 }
 
-#green-bar h4{
+#feature-bar h4{
     font-size: 28px;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 #work {
     background-image:url(../images/work-background-topography.png);
     height: 100%;
+    display: flex;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
 }
 
-
-.beginwell {
-    position: relative;
-    margin-top: 220px;
+#work .case-study-box {
+    background-image:url(../images/beginwell-image1x-compressed.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-right: 40px;
 }
 
-.keepsy {
-    position: relative;
-    margin-left: 728px;
-    margin-top: -258px;
-    margin-bottom: 220px;
+#work .box-content {
+    background-color: rgba(255,255,255, 0.8);
+    margin-right: 36px;
+    padding-left: 148px;
+    padding-top: 75px;
+    padding-bottom: 40px;
 }
 
-.beginwell .overlay-box {
-    position: absolute;
-    top: 64px;
-    width: 674px;
-    bottom: 64px;
-    background-color: rgba(255, 255, 255, 0.9);
+#work > #keepsy {
+    background-image:url(../images/keepsy-image1x-compressed.png);
+    margin-top: 15%;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
-.keepsy .overlay-box {
-    position: absolute;
-    top: 64px;
-    left: 36px;
-    width: 674px;
-    bottom: 64px;
-    background-color: rgba(255, 255, 255, 0.9);
+#work > #keepsy .box-content {
+    margin-left: 36px;
+    margin-right: 0px;
 }
 
-.overlay-box .overlay-box-content {
-    margin-left: 148px;
-    margin-top: 75px;
-}
-
-
-#about-bar {
+#sub-feature-bar {
     background-color: rgba(250, 130, 90, 0.8);
-    width: 80%;
-    z-index: 0;
+    display: flex;
+    margin-right: 30%;
+    position: relative;
 }
 
-#about-bar h4 {
+#sub-feature-bar h4 {
     font-size: 28px;
-    padding-top: 46px;
-    padding-bottom: 46px;
-    margin-left: 148px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding-left: 148px;
+    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
-.about-me {
-    margin-top: 0;
+#about {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    margin-bottom: 80px;
+
 }
 
-.about-me img {
-    width: auto;
+
+#about p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 80px;
+    padding-left: 148px;
+    padding-right: 12em;
+}
+
+#about img {
     grid-column-start: 3;
     grid-column-end: 4;
-    margin-top: -125px;
+    margin-top: -7em;
 }
 
-.about-me .btn {
+#about .btn {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 148px;
+    padding-left: 148px;
 }
 
-.about-me p {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-top: 80px;
-    margin-left: 148px;
-    margin-right: 2em;
-}
-
-#footer {
+#homepage footer {
     display: flex;
     flex-flow: column;
     align-items: center;
