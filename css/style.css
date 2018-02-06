@@ -72,13 +72,13 @@ nav {
     /*background-color: white;*/
 }
 
-#feature-bar{
+.feature-bar {
     background-color: green;
     display: flex;
     justify-content: center;
 }
 
-#feature-bar h4{
+.feature-bar h4 {
     font-size: 28px;
     padding-top: .5em;
     padding-bottom: .5em;
