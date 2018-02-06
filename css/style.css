@@ -3,9 +3,9 @@ html, body {
     height: 100%;
  }
 
- body {
+ /*body {
     display: grid;
- }
+ }*/
 
 #homepage header {
     grid-column-start: 1;
