@@ -457,10 +457,81 @@ html, body {
     height: 100%;
  }
 
+h1 {
+    font-family: 'Unica One', 'Helvetica', sans-serif;
+    font-size: 90px;
+    color: #2E2E2E;
+}
+
+h2 {
+    font-family: 'Unica One', 'Helvetica', sans-serif;
+    font-size: 48px;
+    color: #2E2E2E;
+
+}
+
+h3 {
+    font-family: 'Unica One', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #2E2E2E;
+}
+
+h4 {
+    font-family: lato-light, sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #2E2E2E;
+}
+
+h5 {
+    font-family: lato-black, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #2E2E2E;
+}
+
+h6 {
+    font-family: 'Unica One', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2%;
+    font-size: 24px;
+    color: #2E2E2E;
+}
+
+p {
+    font-family: lato-light;
+    font-weight: 300;
+    line-height: 160%;
+    font-size: 16px;
+    color: #2E2E2E;
+}
+
+p .p-alt {
+    font-weight: 900;
+}
+
+span {
+    font-family: 'Unica One';
+    font-size: 18px;
+    color: #2E2E2E;
+}
+
+nav a {
+    font-family: lato-light;
+    font-size: 21px;
+    color: #2E2E2E;
+    text-decoration: none;
+}
+
+
+
+ /*Homepage style*/
+
 #homepage header {
     grid-column-start: 1;
     grid-column-end: 4;
-    /*min-height: 666px;*/
     background-image:url(../images/intro-background1x-noblur.png);
     background-size: auto;
     display: grid;
@@ -472,7 +543,6 @@ html, body {
     grid-column-end: 3;
     display: flex;
     justify-content: center;
-    /*background-color: green;*/
 }
 
 #kb-logo img {
@@ -553,7 +623,7 @@ nav {
     margin-right: 2em;
 }
 
-#work .box-content {
+.box-content {
     background-color: rgba(255,255,255, 0.8);
     margin-right: 2em;
     padding-left: 10%;
@@ -618,13 +688,14 @@ nav {
     padding-left: 10%;
 }
 
-#homepage footer {
+footer {
     grid-row-start: 4;
     grid-row-end: 5;
     display: flex;
     flex-flow: column;
     align-items: center;
-    background-color: red;
+    margin-top: 2em;
+    background-color: #2E2E2E;
 }
 
 /*Case study style*/
@@ -684,17 +755,55 @@ h1 {
 
 .intro-content {
     padding-top: 4em;
-    padding-left: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 8em;
 }
 
+.intro-content p {
+    margin-top: 0px;
+    padding-top: .5em;
+    margin-left: -8em;
+    margin-right: -4em;
+}
+
 .intro-content span {
-    padding-left: 2em;
-    padding-right: 2em;
-    text-transform: uppercase;
+    padding-top: .75em;
+}
+
+.intro-top {
+    grid-row-start: 1;
+}
+
+.intro-bottom {
+    grid-row-start: 2;
+}
+
+.intro-left {
+    grid-column-start: 3;
+}
+
+.intro-right {
+    grid-column-start: 5;
+}
+
+.span-top {
+    grid-row-start: 1;
+}
+
+.span-bottom {
+    grid-row-start: 2;
+}
+
+.span-left {
+    grid-column-start: 2;
+}
+
+.span-right {
+    grid-column-start: 4;
 }
 
 #case-study-intro .btn {
@@ -730,11 +839,11 @@ h1 {
 }
 
 #problem-solution > #solution {
-    padding-right: 6em;
+    padding-right: 4em;
     grid-column-start: 3;
     grid-column-end: 7;
     margin-left: 22%;
-    margin-top: -6em;
+    margin-top: -18em;
     padding-left: 144px;
     padding-top: 2em;
 }
@@ -750,10 +859,10 @@ h1 {
     background-color: rgba(250, 130, 90, 0.8);
     width: 78%;
     height: 26px;
-    margin-top: -34px;
+    margin-top: -4.5em;
 }
 
-.section-intro h2 {
+.section-intro h3 {
     z-index: 0;
     padding-left: 10%;
 }
@@ -780,7 +889,7 @@ h1 {
 .sub-section-title-bar {
     background-color: rgba(247, 164, 136, 0.8);
     height: 10px;
-    margin-top: -32px;
+    margin-top: -4.25em;
     width: 54%;
 }
 
@@ -939,6 +1048,7 @@ h1 {
     padding-bottom: 2em;
 }
 
+
 #wireframes-support-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -949,6 +1059,10 @@ h1 {
 
 #wireframes-support-content #middle-wireframe {
     padding-left: .5em;
+}
+
+#testing-wireframes-aside {
+    margin-top: -8em;
 }
 
 #early-sketches-support-content {
@@ -970,7 +1084,7 @@ h1 {
     margin-top: 4em;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
         grid-row-gap: 4em;
 }
 
@@ -990,4 +1104,97 @@ h1 {
 #mockups-support-content #bottom-caption {
     grid-row-start: 2;
     grid-column-start: 2;
+}
+
+#mockups-support-content p {
+  background-color: rgba(247, 164, 136, 0.2);
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 2em;
+  margin-bottom: auto;
+  padding-bottom: 2em;
+  margin-left: -12em;
+  margin-right: 8em;
+  margin-top: 5em;
+}
+
+#mockups-support-content #bottom-caption {
+    margin-left: 8em;
+    margin-right: -12em;
+}
+
+#homepage-testing-support-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 4em;
+    background-image:url(../images/homepage-test-image-compressed.png);
+    background-repeat: no-repeat;
+}
+
+#homepage-testing-support-content .feature-bar {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-top: 24em;
+    margin-left: -6em;
+    margin-right: -6em;
+}
+
+#homepage-testing-support-content .feature-bar p {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#prototype-testing-aside {
+    margin-top: -12em;
+}
+
+#prototype-testing-support-content {
+    margin-top: 4em;
+    margin-left: 20em;
+}
+
+#final-thoughts-support-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#final-thoughts-support-content p {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      padding-left: -4em;
+      margin-left: -4em;
+      margin-right: -4em;
+}
+
+#other-work {
+    background-image:url(../images/other-work-pattern-10.svg);
+    background-color: rgba(247, 164, 136, 0.2);
+}
+
+#other-work-content {
+    padding-top: 2em;
+    padding-bottom: -4em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#other-work-content .case-study-box {
+    padding-top: 2em;
+}
+
+#other-work-content .box-content {
+    margin-right: 0;
+}
+
+.case-study footer {
+    margin-top: -6em;
+    padding-top: 8em;
+}
+
+footer h6, footer h3, footer p {
+    color: white;
 }
