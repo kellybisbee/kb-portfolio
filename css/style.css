@@ -618,6 +618,7 @@ nav {
     display: flex;
     justify-content: center;
     padding-left: 1em;
+    margin-bottom: auto;
 }
 
 #hero {
@@ -1256,7 +1257,7 @@ h1 {
 }
 
 .case-study footer {
-    margin-top: -6em;
+    margin-top: -4.5em;
     padding-top: 8em;
 }
 
