@@ -529,6 +529,9 @@ nav a {
     padding-right: 2em;
 }
 
+br {
+    line-height: 2.6;
+}
 
 
  /*Homepage style*/
@@ -587,16 +590,11 @@ nav {
 }
 
 .feature-bar {
-    background-color: green;
+    background-color: rgba(250, 130, 90, 0.8);
     display: flex;
     justify-content: center;
 }
 
-.feature-bar h4 {
-    font-size: 28px;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
 
 #work {
     background-image:url(../images/work-background-topography.png);
@@ -644,10 +642,9 @@ nav {
     position: relative;
 }
 
-#sub-feature-bar h4 {
+#sub-feature-bar h3 {
     padding-left: 10%;
-    padding-top: .2em;
-    padding-bottom: .2em;
+    margin-left: 0;
 }
 
 #about {
@@ -662,9 +659,9 @@ nav {
 #about p {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 80px;
+    margin-top: 4em;
     padding-left: 10%;
-    padding-right: 12em;
+    padding-right: 20em;
 }
 
 #about img {
@@ -991,12 +988,15 @@ h1 {
 }
 
 #competitive-analysis-support-content .feature-bar {
-    background-color: pink;
-    padding-left: 24%;
-    padding-right: 24%;
+    padding-left: 28%;
+    padding-right: 28%;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 1em;
+}
+
+#competitive-analysis-support-content .feature-bar p {
+    font-family: lato-bold;
 }
 
 #user-stories-support-content {
@@ -1061,6 +1061,7 @@ h1 {
     padding-right: 4em;
     padding-top: 2em;
     padding-bottom: 2em;
+    font-family: lato-bold;
 }
 
 #wireframes-support-content {
@@ -1163,6 +1164,7 @@ h1 {
     padding-right: 4em;
     padding-top: 2em;
     padding-bottom: 2em;
+    font-family: lato-bold;
 }
 
 #prototype-testing-aside {
