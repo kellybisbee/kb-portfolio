@@ -561,6 +561,8 @@ a {
     display: block;
 }
 
+/*Buttons and transitions*/
+
 .btn {
     font-family: 'Unica One', Helvetica, sans-serif;
     font-weight: 900;
@@ -576,14 +578,18 @@ a {
     text-decoration: none;
     display: inline-block;
     margin-top: 1em;
-    transition: transform .5s;
+    /*transition: transform .5s;*/
 }
 
 .case-study-btn:hover {
     background-color: #2e2e2e;
     color: #fff;
     bottom: 1px;
-    transform: translate(1px, 1px);
+    /*transform: translate(1px, 1px);*/
+}
+
+.box-content:hover {
+    background-color: rgba(255,255,255, 0.8);
 }
 
 
@@ -629,7 +635,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2em;
-    padding-bottom: 6em;
+    min-height: 460px;
 
 }
 
@@ -638,9 +644,18 @@ nav {
     font-size:90px;
 }
 
-#hero span {
-    padding-top: 8em;
+#hero > span {
+    padding-top: 6em;
     padding-left: 50px;
+}
+
+#hero h4 {
+    margin-bottom: 1em;
+}
+
+.fa-plus {
+    padding-right: 1em;
+    color: #98D4D4;
 }
 
 .feature-bar {
@@ -670,7 +685,7 @@ nav {
 }
 
 .box-content {
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255,255,255, 0.6);
     margin-right: 2em;
     padding-left: 10%;
     padding-top: 2em;
@@ -701,40 +716,48 @@ nav {
 }
 
 #sub-feature-bar h3 {
-    padding-left: 10%;
+    padding-left: 2em;
     margin-left: 0;
 }
 
 #about {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     height: 100%;
-    margin-bottom: 80px;
-
+    margin-bottom: 2em;
+    padding-left: 6em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-
-#about p {
+#about div {
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 4em;
-    padding-left: 10%;
-    padding-right: 20em;
+    display: flex;
+    flex-flow: column;
+    padding-top: 2em;
 }
 
-#about img {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin-top: -7em;
+#about div p {
+    margin-right: 8%;
+    padding-bottom: 2em;
 }
 
-#about .btn {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding-left: 10%;
+#about div a {
+  text-decoration: none;
+  color: #2e2e2e;
+  background: #98D4D4;
+  padding: 10px 0 0 20px;
+  margin-right: auto;
 }
+
+#about aside {
+    margin-top: -8em;
+    grid-column-end: 5;
+}
+
+#about aside img {
+    max-height: 720px;
+}
+
 
 footer {
     grid-row-start: 4;
