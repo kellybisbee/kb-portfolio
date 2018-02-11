@@ -529,6 +529,7 @@ nav a {
     text-decoration: none;
     padding-left: 2em;
     padding-right: 2em;
+    padding-bottom: .5em;
     position: relative;
     z-index: 0;
 }
@@ -537,15 +538,15 @@ nav a:after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 1.75em;
+  left: 1.85em;
   width: 0%;
-  border-bottom: 10px solid rgba(247, 164, 136, 0.8);
+  border-bottom: 10px solid #98D4D4;
   transition: 0.2s;
   z-index: auto;
 }
 
 nav a:hover:after {
-    width: 70%;
+    width: 60%;
 }
 
 nav a:hover {
@@ -741,12 +742,13 @@ nav {
     padding-bottom: 2em;
 }
 
-#about div a {
+.view-more-btn {
   text-decoration: none;
   color: #2e2e2e;
   background: #98D4D4;
   padding: 10px 0 0 20px;
   margin-right: auto;
+  display: inline-block;
 }
 
 #about aside {
