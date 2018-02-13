@@ -467,6 +467,7 @@ h1 {
     font-size: 4.76em;
     font-weight: 500;
     color: #2E2E2E;
+    z-index: 0;
 }
 
 h2 {
@@ -615,7 +616,7 @@ a {
     grid-column-start: 1;
     grid-column-end: 4;
     background-image:url(../images/intro-background1x-noblur.png);
-    background-size: auto;
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -644,29 +645,35 @@ nav {
 }
 
 #hero {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2em;
     min-height: 460px;
+    flex-flow: column;
+    justify-content: center;
 
 }
 
 #hero h1 {
-    padding-left: 220px;
-    font-size:90px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: .5em;
 }
 
 #hero > span {
-    padding-top: 6em;
-    padding-left: 50px;
+    text-align: center;
+    margin-top: 0;
 }
 
-#hero h4 {
-    margin-bottom: 1em;
+#hero h5 {
+    margin-bottom: .5em;
+    margin-top: .5em;
+    font-family: lato-light;
+    font-weight: 300;
 }
 
 .fa-plus {
@@ -678,6 +685,7 @@ nav {
     background-color: rgba(250, 130, 90, 0.8);
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -685,50 +693,62 @@ nav {
     background-image:url(../images/work-background-topography.png);
     height: 100%;
     display: flex;
-    padding-top: 8em;
-    padding-bottom: 8em;
-
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 6em;
+    padding-top: 6em;
 }
 
 #work .case-study-box {
     background-image:url(../images/beginwell-image1x-compressed.png);
     background-repeat: no-repeat;
-    width: 100%;
     height: 100%;
     padding-top: 2em;
     padding-bottom: 2em;
-    margin-right: 2em;
+    min-width: 650px;
 }
 
 .box-content {
     background-color: rgba(255,255,255, 0.6);
     margin-right: 2em;
+    margin-left: 2em;
     padding-left: 10%;
     padding-top: 2em;
     padding-bottom: 2em;
+    position: relative;
 }
 
-.box-content > p {
+.box-content .tagline {
     margin-top: 0;
     margin-bottom: 2em;
+    z-index: 0;
+    background-color: rgba(247, 164, 136, 0.4);
+    position: absolute;
+    left: 0;
+    padding: 10px 0 0 10%;
+    display: inline-block;
+}
+
+#keepsy .tagline {
+    background-color: rgba(152, 212, 212, 0.4);
 }
 
 .box-content h2 {
-    margin-top: 0;
+    margin-top: 1em;
     margin-bottom: .25em;
     margin-left: -4px;
 }
 
+
 #work > #keepsy {
     background-image:url(../images/keepsy-image1x-compressed.png);
-    margin-top: 15%;
+    margin-top: 2em;
     padding-right: 0px;
     margin-right: 0px;
 }
 
 #work > #keepsy .box-content {
-    margin-left: 36px;
-    margin-right: 0px;
+    margin-left: 2em;
 }
 
 #sub-feature-bar {
@@ -746,17 +766,18 @@ nav {
 #about {
     height: 100%;
     margin-bottom: 2em;
-    padding-left: 6em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #about div {
-    grid-column-start: 1;
-    grid-column-end: 3;
     display: flex;
     flex-flow: column;
     padding-top: 2em;
+    padding-left: 22%;
+    padding-right: 22%;
 }
 
 #about div p {
@@ -766,12 +787,11 @@ nav {
 
 
 #about aside {
-    margin-top: -8em;
-    grid-column-end: 5;
+    margin-top: 2em;
 }
 
 #about aside img {
-    max-height: 720px;
+    max-height: 450px;
 }
 
 
@@ -823,10 +843,6 @@ html, body {
     height: 26px;
     align-self: flex-start;
     margin-top: -5em;
-}
-
-h1 {
-    z-index: 0;
 }
 
 .intro-content {
@@ -1320,4 +1336,116 @@ h1 {
 
 footer h6, footer h3, footer p {
     color: white;
+}
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+  #header {
+      background-size: auto;
+  }
+
+  #hero {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 2em;
+      min-height: 460px;
+
+    }
+
+    #hero h1 {
+      padding-left: 220px;
+      font-size:90px;
+    }
+
+    #hero > span {
+      padding-top: 16%;
+      padding-left: 50px;
+      text-align: left;
+    }
+
+    #hero h5 {
+      font-family: lato-light;
+      font-weight: 300;
+      margin-bottom: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+  #about {
+      height: 100%;
+      margin-bottom: 2em;
+      padding-left: 6em;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  #about div {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      display: flex;
+      flex-flow: column;
+      padding-top: 2em;
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  #about div p {
+      margin-right: 8%;
+      padding-bottom: 1em;
+  }
+
+
+  #about aside {
+      margin-top: -8em;
+      grid-column-end: 5;
+  }
+
+  #about aside img {
+      max-height: 720px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #work {
+      background-image:url(../images/work-background-topography.png);
+      height: 100%;
+      display: flex;
+      flex-flow: row;
+      padding-bottom: 6em;
+      padding-top: 0;
+
+  }
+
+  #work .case-study-box {
+      background-image:url(../images/beginwell-image1x-compressed.png);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      margin-right: 2em;
+  }
+
+  .box-content {
+      background-color: rgba(255,255,255, 0.6);
+      margin-right: 2em;
+      margin-left: 0;
+      padding-left: 10%;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      position: relative;
+  }
+
+  #work > #keepsy {
+      margin-top: 15%;
+  }
+
+  #work > #keepsy .box-content {
+      margin-right: 0;
+  }
 }
