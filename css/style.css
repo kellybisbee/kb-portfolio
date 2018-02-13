@@ -839,7 +839,7 @@ html, body {
 
 #intro-bar {
     background-color: rgba(250, 130, 90, 0.8);
-    width: 78%;
+    width: 100%;
     height: 26px;
     align-self: flex-start;
     margin-top: -5em;
@@ -847,18 +847,16 @@ html, body {
 
 .intro-content {
     padding-top: 4em;
-    padding-left: 2em;
-    padding-right: 2em;
+    margin-left: -2.5em;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 8em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
 }
 
 .intro-content p {
     margin-top: 0px;
     padding-top: .5em;
-    margin-left: -8em;
     margin-right: -4em;
 }
 
@@ -866,28 +864,12 @@ html, body {
     padding-top: .75em;
 }
 
-.intro-top {
-    grid-row-start: 1;
-}
-
-.intro-bottom {
-    grid-row-start: 2;
-}
-
 .intro-left {
     grid-column-start: 3;
 }
 
 .intro-right {
-    grid-column-start: 5;
-}
-
-.span-top {
-    grid-row-start: 1;
-}
-
-.span-bottom {
-    grid-row-start: 2;
+    grid-column-start: 3;
 }
 
 .span-left {
@@ -895,12 +877,12 @@ html, body {
 }
 
 .span-right {
-    grid-column-start: 4;
+    grid-column-start: 2;
 }
 
 .highlight-bar {
     background-color: rgba(250, 130, 90, 0.8);
-    width: 78%;
+    width: 100%;
     height: 8em;
     align-self: flex-start;
     margin-top: -6em;
@@ -919,15 +901,17 @@ html, body {
     margin-top: 6em;
     background-image: url(../images/prob-solution-background-image-compressed.png);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
     padding-top: 2em;
     padding-bottom: 2em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
-#problem-solution h6 {
+#problem-solution h5 {
     margin-bottom: 1.25em;
     margin-top: auto;
 }
@@ -943,20 +927,14 @@ html, body {
 }
 
 #problem-solution > #problem {
-    margin-right: 22%;
-    padding-right: 6em;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    padding-left: 144px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 #problem-solution > #solution {
-    padding-right: 4em;
-    grid-column-start: 3;
-    grid-column-end: 7;
-    margin-left: 22%;
-    margin-top: -14em;
-    padding-left: 144px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 2em;
 }
 
 .section {
@@ -967,7 +945,7 @@ html, body {
 
 .section-title-bar {
     background-color: rgba(250, 130, 90, 0.8);
-    width: 78%;
+    width: 100%;
     height: 26px;
     margin-top: -4.5em;
 }
@@ -1003,7 +981,7 @@ html, body {
     background-color: rgba(247, 164, 136, 0.8);
     height: 10px;
     margin-top: -3.5em;
-    width: 58%;
+    width: 100%;
 }
 
 .sub-section-content {
@@ -1373,6 +1351,30 @@ footer h6, footer h3, footer p {
       font-weight: 300;
       margin-bottom: 1em;
     }
+
+    /*Case study*/
+
+    #intro-bar {
+        width: 78%;
+    }
+
+    #problem-solution > #problem {
+        margin-right: 22%;
+        margin-left: 22%;
+    }
+
+    #problem-solution > #solution {
+        margin-right: 22%;
+        margin-left: 22%;
+    }
+
+    .section-title-bar {
+      width: 78%;
+    }
+
+    .sub-section-title-bar {
+        width: 58%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1407,6 +1409,65 @@ footer h6, footer h3, footer p {
 
   #about aside img {
       max-height: 720px;
+  }
+
+  /*Case Study*/
+
+  .intro-content {
+      padding-top: 4em;
+      padding-left: 2em;
+      padding-right: 2em;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 8em;
+  }
+
+  .intro-content p {
+      margin-top: 0px;
+      padding-top: .5em;
+      margin-left: -8em;
+      margin-right: -4em;
+  }
+
+  .intro-content span {
+      padding-top: .75em;
+  }
+
+  .intro-top {
+      grid-row-start: 1;
+  }
+
+  .intro-bottom {
+      grid-row-start: 2;
+  }
+
+  .intro-left {
+      grid-column-start: 3;
+  }
+
+  .intro-right {
+      grid-column-start: 5;
+  }
+
+  .span-top {
+      grid-row-start: 1;
+  }
+
+  .span-bottom {
+      grid-row-start: 2;
+  }
+
+  .span-left {
+      grid-column-start: 2;
+  }
+
+  .span-right {
+      grid-column-start: 4;
+  }
+
+  .highlight-bar {
+      width: 78%;
   }
 }
 
@@ -1448,4 +1509,53 @@ footer h6, footer h3, footer p {
   #work > #keepsy .box-content {
       margin-right: 0;
   }
+
+  /*Case Study*/
+
+  #problem-solution {
+      margin-top: 6em;
+      background-image: url(../images/prob-solution-background-image-compressed.png);
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      padding-top: 2em;
+      padding-bottom: 2em;
+  }
+
+  #problem-solution h5 {
+      margin-bottom: 1.25em;
+      margin-top: auto;
+  }
+
+  #problem-solution p {
+      margin-top: .5em;
+  }
+
+  #problem-solution .box-content {
+      background-color: rgba(255,255,255, 0.8);
+      padding-bottom: 2em;
+
+  }
+
+  #problem-solution > #problem {
+      margin-right: 22%;
+      padding-right: 6em;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      padding-left: 144px;
+      margin-left: 0;
+  }
+
+  #problem-solution > #solution {
+      padding-right: 4em;
+      grid-column-start: 3;
+      grid-column-end: 7;
+      margin-left: 22%;
+      margin-top: -14em;
+      padding-left: 144px;
+      margin-right: 0;
+  }
+
 }
