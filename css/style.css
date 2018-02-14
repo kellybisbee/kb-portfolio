@@ -1032,7 +1032,7 @@ html, body {
 .stats-box {
     background-color: rgba(255, 207, 191, 0.7);
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 7;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-right: -1em;
@@ -1040,12 +1040,11 @@ html, body {
 
 #user-survey-support-content .stats-box-right {
     background-color: rgba(247, 164, 136, 0.2);
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 7;
     grid-row-start: 2;
-    margin-top: -12em;
+    margin-top: 1em;
     margin-left: -1em;
-    margin-right: 0;
 
 }
 
@@ -1056,12 +1055,12 @@ html, body {
     padding-top: 1em;
     padding-bottom: 1em;
     margin-left: 4em;
-    margin-right: 12em;
+    margin-right: 4em;
 }
 
 .stats-box .stats-right {
-    margin-left: 10em;
-    margin-right: 6em;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 .stats-box p:last-child {
@@ -1335,6 +1334,20 @@ footer h6, footer h3, footer p {
 
 /*Media Queries*/
 
+@media (min-width: 500px){
+
+  .stats-box {
+      grid-column-start: 1;
+      grid-column-end: 5;
+  }
+
+  #user-survey-support-content .stats-box-right {
+      grid-column-start: 1;
+      grid-column-end: 5;
+
+  }
+}
+
 @media (min-width: 768px) {
   #header {
       background-size: auto;
@@ -1391,6 +1404,17 @@ footer h6, footer h3, footer p {
 
     .sub-section-title-bar {
         width: 58%;
+    }
+
+    .stats-box {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #user-survey-support-content .stats-box-right {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
     }
 }
 
@@ -1499,6 +1523,27 @@ footer h6, footer h3, footer p {
   .sub-section p {
       padding-left: 10%;
       padding-right: 45%;
+  }
+
+  #user-survey-support-content .stats-box-right {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      margin-top: -12em;
+      margin-right: 0;
+  }
+
+  .stats-box .stats {
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-left: 4em;
+      margin-right: 12em;
+  }
+
+  .stats-box .stats-right {
+      margin-left: 10em;
+      margin-right: 6em;
   }
 
 }
