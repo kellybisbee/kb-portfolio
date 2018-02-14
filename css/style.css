@@ -576,6 +576,12 @@ a {
     font-weight: 900;
     letter-spacing: .02em;
     font-size: 20px;
+    padding: 15px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background: linear-gradient(90deg, rgba(3, 127, 155, 0.85) 0%, rgba(4, 156, 190, 0.765) 79.01%, rgba(4, 156, 190, 0.765) 100%), #037F9B;
 }
 
 .view-more-btn {
@@ -590,7 +596,7 @@ a {
 .case-study-btn {
     border: 2px solid #2e2e2e;
     color: #2e2e2e;
-    padding: 15px 80px;
+    padding: 15px 120px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -1100,6 +1106,7 @@ html, body {
     padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 1em;
+    text-align: left;
 }
 
 #competitive-analysis-support-content .feature-bar p {
@@ -1162,6 +1169,7 @@ html, body {
     margin-bottom: 8em;
     margin-left: -6em;
     margin-right: -6em;
+    text-align: left;
 }
 
 #pen-and-paper-support-content .feature-bar p {
@@ -1262,10 +1270,11 @@ html, body {
 #homepage-testing-support-content .feature-bar {
     grid-column-start: 3;
     grid-column-end: 5;
-    margin-top: 8em;
-    margin-bottom: 8em;
+    margin-top: 4em;
+    margin-bottom: 4em;
     margin-left: -6em;
     margin-right: -6em;
+    text-align: left;
 }
 
 #homepage-testing-support-content .feature-bar p {
@@ -1300,16 +1309,23 @@ html, body {
 }
 
 #other-work-content .case-study-box {
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 #other-work-content .box-content {
     margin-right: 0;
+    padding-right: 4em;
+    padding-left: 4em;
+    background-color: rgba(255,255,255,0.95);
+}
+
+#other-work-content h3 {
+    margin-bottom: 0.5em;
 }
 
 .case-study footer {
-    margin-top: -4.5em;
-    padding-top: 8em;
+    margin-top: -3.5em;
+    padding-top: 4em;
 }
 
 footer h6, footer h3, footer p {
