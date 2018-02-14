@@ -963,7 +963,7 @@ html, body {
 
 .section-intro p {
     padding-left: 10%;
-    padding-right: 45%;
+    padding-right: 25%;
     font-size: 1.25em;
     padding-top: 1em;
     line-height: 1.8;
@@ -979,7 +979,7 @@ html, body {
 
 .sub-section p {
     padding-left: 10%;
-    padding-right: 45%;
+    padding-right: 25%;
     padding-top: 1em;
 }
 
@@ -997,6 +997,7 @@ html, body {
     margin-left: 80%;
     position: absolute;
     margin-top: -4em;
+    display: none;
 }
 
 .sub-section-content aside p {
@@ -1485,6 +1486,21 @@ footer h6, footer h3, footer p {
   .highlight-bar {
       width: 78%;
   }
+
+  .sub-section-content aside {
+      display:inline-block;
+  }
+
+  .section-intro p {
+      padding-left: 10%;
+      padding-right: 45%;
+  }
+
+  .sub-section p {
+      padding-left: 10%;
+      padding-right: 45%;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1541,7 +1557,7 @@ footer h6, footer h3, footer p {
   }
 
   #problem-solution h5 {
-      margin-bottom: 1.25em;
+      margin-bottom: 1em;
       margin-top: auto;
   }
 
