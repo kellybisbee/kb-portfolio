@@ -517,6 +517,8 @@ p {
     line-height: 1.6;
     font-size: 1em;
     color: #2E2E2E;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .p-alt {
@@ -585,12 +587,12 @@ a {
 }
 
 .view-more-btn {
-  text-decoration: none;
-  color: #2e2e2e;
-  background: #98D4D4;
-  padding: 10px 0 0 20px;
-  margin-right: auto;
-  display: inline-block;
+    text-decoration: none;
+    color: #2e2e2e;
+    background: #98D4D4;
+    padding: 10px 0 0 20px;
+    margin-right: auto;
+    display: inline-block;
 }
 
 .case-study-btn {
@@ -624,8 +626,6 @@ a {
  /*Homepage style*/
 
 #homepage header {
-    grid-column-start: 1;
-    grid-column-end: 4;
     background-image:url(../images/intro-background1x-noblur.png);
     background-size: cover;
     display: grid;
@@ -699,6 +699,12 @@ nav {
     text-align: center;
 }
 
+.feature-bar h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+}
+
 
 #work {
     background-image:url(../images/work-background-topography.png);
@@ -762,49 +768,60 @@ nav {
     margin-left: 2em;
 }
 
+/*About page*/
+
 #sub-feature-bar {
     background-color: rgba(250, 130, 90, 0.8);
-    display: flex;
-    margin-right: 30%;
+    width: 100%;
     position: relative;
 }
 
-/*About page*/
-
 #sub-feature-bar h3 {
-    padding-left: 2em;
-    margin-left: 0;
-}
-
-#about-page header {
-    margin-bottom: 4em;
-}
-
-#about {
-    height: 100%;
-    margin-bottom: 2em;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#about div {
-    display: flex;
-    flex-flow: column;
-    padding-top: 2em;
-    padding-left: 22%;
-    padding-right: 22%;
-}
-
-#about div p {
-    margin-right: 8%;
+    padding-left: 10%;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
+#about-page {
+    height: 100%;
+}
+
+#about-page header {
+    margin-bottom: 2em;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -2em;
+}
+
+#about div {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-flow: column;
+    padding-top: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#about div p {
+    padding-bottom: 1em;
+}
+
+#about div a {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 #about aside {
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start: 2;
     margin-top: 2em;
+    margin-bottom: 2em;
+
 }
 
 #about aside img {
@@ -814,21 +831,18 @@ nav {
 /*Footer*/
 
 footer {
-    grid-row-start: 4;
-    grid-row-end: 5;
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 2em;
     background-color: #2E2E2E;
+}
+
+.case-study footer {
+    margin-top: 2em;
 }
 
 /*Case study style*/
 
-html, body {
-    overflow-x: hidden;
-    height: 100%;
- }
 
 .case-study header {
     display: grid;
@@ -1224,7 +1238,6 @@ html, body {
 
 #style-guide-support-content img {
     grid-column-start: 3;
-    margin-right: 4em;
     margin-top: -8em;
 }
 
@@ -1394,6 +1407,13 @@ footer h6, footer h3, footer p {
       margin-bottom: 1em;
     }
 
+    /*About page*/
+
+    #about div {
+        margin-right: 24%;
+    }
+
+
     /*Case study*/
 
     #intro-bar {
@@ -1431,33 +1451,30 @@ footer h6, footer h3, footer p {
 }
 
 @media (min-width: 1200px) {
-  #about {
-      height: 100%;
-      margin-bottom: 2em;
-      padding-left: 6em;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+
+  #sub-feature-bar {
+      width: 70%;
   }
 
   #about div {
       grid-column-start: 1;
       grid-column-end: 3;
-      display: flex;
-      flex-flow: column;
-      padding-top: 2em;
-      padding-left: 0;
-      padding-right: 0;
-  }
-
-  #about div p {
-      margin-right: 8%;
+      grid-row-start: 1;
+      padding-left: 10%;
       padding-bottom: 1em;
+      margin-right: 24%;
   }
 
+  #about div a {
+      margin-top: 2em;
+      margin-bottom: 2em;
+  }
 
   #about aside {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
       margin-top: -8em;
-      grid-column-end: 5;
   }
 
   #about aside img {
