@@ -594,8 +594,12 @@ a {
 }
 
 .case-study-btn {
+    font-family: 'Unica One', Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: .02em;
+    font-size: 20px;
     border: 2px solid #2e2e2e;
-    background: linear-gradient(90deg, rgba(3, 127, 155, 0.0) 0%, rgba(4, 156, 190, 0.0) 0%, rgba(4, 156, 190, 0.0) 0%), rgba(255,255,255,0.1);
+    background-color; rgba(255,255,255,0.1);
     color: #2e2e2e;
     padding: 15px 120px;
     text-align: center;
