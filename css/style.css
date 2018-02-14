@@ -769,9 +769,15 @@ nav {
     position: relative;
 }
 
+/*About page*/
+
 #sub-feature-bar h3 {
     padding-left: 2em;
     margin-left: 0;
+}
+
+#about-page header {
+    margin-bottom: 4em;
 }
 
 #about {
@@ -805,6 +811,7 @@ nav {
     max-height: 450px;
 }
 
+/*Footer*/
 
 footer {
     grid-row-start: 4;
