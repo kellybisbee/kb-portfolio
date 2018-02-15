@@ -845,7 +845,7 @@ footer p {
     padding-bottom: 4em;
 }
 
-footer span {
+footer .email {
     color: white;
     font-family: lato-bold;
     letter-spacing: .05em;
