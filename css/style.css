@@ -837,6 +837,26 @@ footer {
     background-color: #2E2E2E;
 }
 
+footer h3 {
+    margin-bottom: auto;
+}
+
+footer>p {
+    padding-bottom: 4em;
+}
+
+footer span {
+    color: white;
+    font-family: lato-bold;
+    letter-spacing: .05em;
+    border-bottom: 10px solid rgba(250, 130, 90, 0.8);
+}
+
+footer .p-copyright {
+    font-size: 12px;
+    padding-bottom: .5em;
+}
+
 .case-study footer {
     margin-top: 2em;
 }
@@ -1110,7 +1130,8 @@ footer {
 }
 
 #persona p {
-    margin-top: 12em;
+    margin-top: 8em;
+    margin-bottom: .5em;
     background-color: rgba(255,255,255,0.8);
     font-style: italic;
     font-size: 1.25em;
@@ -1127,8 +1148,8 @@ footer {
 }
 
 #competitive-analysis-support-content .feature-bar {
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-left: 10%;
+    padding-right: 25%;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 1em;
@@ -1148,23 +1169,20 @@ footer {
 .stories-box {
     background-color: rgba(255, 207, 191, 0.7);
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 7;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 4em;
     padding-right: 1em;
-    margin-right: 4em;
 }
 
 #user-stories-support-content #stories-box-right {
     background-color: rgba(247, 164, 136, 0.2);
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
     grid-row-start: 2;
-    margin-top: -6em;
-    margin-left: -6em;
+    margin-top: 2em;
     padding-right: 1em;
-    margin-right: -4em;
 }
 
 #user-flow-support-content {
@@ -1173,10 +1191,12 @@ footer {
     margin-top: 2em;
 }
 
+/*#user-flow-support-content img {
+    width: 100%;
+}*/
+
 #user-flow-right {
-    grid-column-start: 4;
-    margin-left: -14em;
-    margin-top: 14em;
+    grid-column-start: 1;
 }
 
 #pen-and-paper-support-content {
@@ -1184,23 +1204,18 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     margin-top: 2em;
     background-image:url(../images/wireframe-sketches-compressed.png);
-    background-repeat: no-repeat;
-    margin-bottom: -2em;
+    background-repeat: repeat;
 }
 
-#pen-and-paper-support-content .feature-bar {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    margin-top: 4em;
-    margin-bottom: 8em;
-    margin-left: -6em;
-    margin-right: -6em;
+.feature-bar {
+    grid-column-start: 1;
+    grid-column-end: 7;
     text-align: left;
 }
 
-#pen-and-paper-support-content .feature-bar p {
-    padding-left: 4em;
-    padding-right: 4em;
+.feature-bar p {
+    padding-left: 10%;
+    padding-right: 25%;
     padding-top: 2em;
     padding-bottom: 2em;
     font-family: lato-bold;
@@ -1217,6 +1232,11 @@ footer {
 
 #wireframes-support-content #middle-wireframe {
     padding-left: .5em;
+    grid-row-start: 2;
+}
+
+#wireframes-support-content #last-wireframe {
+    grid-row-start: 3;
 }
 
 #testing-wireframes-aside {
@@ -1231,22 +1251,27 @@ footer {
     margin-top: 4em;
 }
 
+#early-sketches-support-content img {
+    width: 100%;
+}
+
 #style-guide-support-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 10%;
 }
 
 #style-guide-support-content img {
-    grid-column-start: 3;
-    margin-top: -8em;
+    grid-column-start: 1;
+    max-width: 200%;
+    margin-top: 2em;
 }
 
 #mockups-support-content {
     margin-top: 2em;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 4em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 #mockups-support-content img {
@@ -1254,16 +1279,17 @@ footer {
 }
 
 #mockups-support-content p {
-    grid-column-start: 4;
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 
 #mockups-support-content #bottom-mockup-image {
-    grid-row-start: 2;
-    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-column-start: 2;
 }
 
 #mockups-support-content #bottom-caption {
-    grid-row-start: 2;
+    grid-row-start: 4;
     grid-column-start: 2;
 }
 
@@ -1274,15 +1300,8 @@ footer {
   padding-top: 2em;
   margin-bottom: auto;
   padding-bottom: 2em;
-  margin-left: -12em;
-  margin-right: 8em;
-  margin-top: 5em;
 }
 
-#mockups-support-content #bottom-caption {
-    margin-left: 8em;
-    margin-right: -12em;
-}
 
 #homepage-testing-support-content {
     display: grid;
@@ -1292,23 +1311,6 @@ footer {
     background-repeat: no-repeat;
 }
 
-#homepage-testing-support-content .feature-bar {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    margin-top: 4em;
-    margin-bottom: 4em;
-    margin-left: -6em;
-    margin-right: -6em;
-    text-align: left;
-}
-
-#homepage-testing-support-content .feature-bar p {
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-family: lato-bold;
-}
 
 #prototype-testing-aside {
     margin-top: -16em;
@@ -1316,7 +1318,7 @@ footer {
 
 #prototype-testing-support-content {
     margin-top: 4em;
-    margin-left: 20em;
+    margin-left: 10%;
 }
 
 #other-work {
@@ -1370,6 +1372,10 @@ footer h6, footer h3, footer p {
       grid-column-start: 1;
       grid-column-end: 5;
 
+  }
+
+  #persona p {
+      margin-top: 12em;
   }
 }
 
@@ -1447,6 +1453,23 @@ footer h6, footer h3, footer p {
         grid-column-start: 1;
         grid-column-end: 3;
 
+    }
+
+    #persona p {
+        margin-top: 14em;
+    }
+
+    #competitive-analysis-support-content .feature-bar {
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+
+    .stories-box {
+        grid-column-end: 6;
+    }
+
+    #user-stories-support-content #stories-box-right {
+        grid-column-end: 6;
     }
 }
 
@@ -1575,6 +1598,68 @@ footer h6, footer h3, footer p {
       margin-right: 6em;
   }
 
+  .stories-box {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 4em;
+      padding-right: 1em;
+      margin-right: 4em;
+  }
+
+  #user-stories-support-content #stories-box-right {
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      margin-top: -6em;
+      margin-left: -6em;
+      padding-right: 1em;
+      margin-right: -4em;
+  }
+
+  #user-flow-right {
+      grid-column-start: 4;
+      margin-left: -14em;
+      margin-top: 14em;
+  }
+
+  #pen-and-paper-support-content {
+      background-repeat: no-repeat;
+  }
+
+.feature-bar {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      margin-top: 4em;
+      margin-bottom: 4em;
+      margin-left: -6em;
+      margin-right: -6em;
+  }
+
+.feature-bar p {
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+
+  #wireframes-support-content #middle-wireframe {
+      padding-left: .5em;
+      grid-row-start: 1;
+      grid-column-start: 2;
+  }
+
+  #wireframes-support-content #last-wireframe {
+      grid-row-start: 2;
+      grid-column-start: 1;
+  }
+
+  #style-guide-support-content img {
+      grid-column-start: 3;
+      margin-top: -20em;
+      margin-left: -9.5em;
+      padding-left: 0;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1662,6 +1747,61 @@ footer h6, footer h3, footer p {
       margin-top: -14em;
       padding-left: 144px;
       margin-right: 0;
+  }
+
+  #wireframes-support-content #middle-wireframe {
+      padding-left: .5em;
+      grid-row-start: 1;
+      grid-column-start: 2;
+  }
+
+  #wireframes-support-content #last-wireframe {
+      grid-row-start: 1;
+      grid-column-start: 3;
+  }
+
+  #mockups-support-content {
+      margin-top: 2em;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: 4em;
+  }
+
+  #mockups-support-content img {
+      grid-column-start: 2;
+  }
+
+  #mockups-support-content p {
+      grid-column-start: 4;
+      grid-row-start: 1;
+  }
+
+  #mockups-support-content #bottom-mockup-image {
+      grid-row-start: 2;
+      grid-column-start: 4;
+  }
+
+  #mockups-support-content #bottom-caption {
+      grid-row-start: 2;
+      grid-column-start: 2;
+  }
+
+  #mockups-support-content p {
+    background-color: rgba(247, 164, 136, 0.2);
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+    margin-bottom: auto;
+    padding-bottom: 2em;
+    margin-left: -12em;
+    margin-right: 8em;
+    margin-top: 5em;
+  }
+
+  #mockups-support-content #bottom-caption {
+      margin-left: 8em;
+      margin-right: -12em;
   }
 
 }
