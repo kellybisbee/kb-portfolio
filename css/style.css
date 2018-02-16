@@ -1146,11 +1146,6 @@ footer .p-copyright {
 }
 
 
-
-#competitive-analysis-support-content {
-    margin-top: 2em;
-}
-
 #competitive-analysis-support-content .feature-bar {
     padding-left: 10%;
     padding-right: 25%;
@@ -1162,6 +1157,7 @@ footer .p-copyright {
 
 #competitive-analysis-support-content .feature-bar p {
     font-family: lato-bold;
+    margin-top: 0;
 }
 
 #user-stories-support-content {
