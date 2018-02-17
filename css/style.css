@@ -608,10 +608,6 @@ a {
     padding-top: 15px;
 }
 
-.view-more-btn:hover .view-more-txt {
-    top: -.25em;
-    margin-right: 1em;
-}
 
 .case-study-btn {
     font-family: 'Unica One', Helvetica, sans-serif;
