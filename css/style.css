@@ -1767,7 +1767,7 @@ footer h6, footer h3, footer p {
   }
 
   .section-intro {
-      background:url(../images/map-details.png);
+      background-image: url(../images/map-details.png);
       background-repeat: no-repeat;
   }
 
