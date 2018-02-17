@@ -1035,7 +1035,7 @@ footer .p-copyright {
 }
 
 .section-intro {
-    background-image: url('../images/map-details.svg');
+    background:url(../images/map-details.svg);
     background-repeat: no-repeat;
 }
 
