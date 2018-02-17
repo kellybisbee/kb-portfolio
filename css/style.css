@@ -1177,9 +1177,7 @@ footer .p-copyright {
 #competitive-analysis-support-content .feature-bar {
     background-image: url('../images/topography-pattern.svg');
     padding-left: 10%;
-    padding-right: 25%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    margin-top: 2em;
     margin-bottom: 1em;
     text-align: left;
 }
@@ -1490,11 +1488,6 @@ footer h6, footer h3, footer p {
         margin-top: 14em;
     }
 
-    #competitive-analysis-support-content .feature-bar {
-        padding-left: 28%;
-        padding-right: 28%;
-    }
-
     .stories-box {
         grid-column-end: 6;
     }
@@ -1674,6 +1667,11 @@ footer h6, footer h3, footer p {
       margin-right: -6em;
   }
 
+  #competitive-analysis-support-content .feature-bar {
+      padding-left: 28%;
+      padding-right: 28%;
+  }
+  
 .feature-bar p {
       padding-left: 10%;
       padding-right: 10%;
