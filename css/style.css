@@ -1144,7 +1144,7 @@ footer .p-copyright {
 }
 
 #persona {
-    background-image: url('../images/persona-image-compressed.png');
+    background-image: url(../images/persona-image-compressed.png);
     background-repeat: no-repeat;
     max-width: 855px;
     height: 100%;
@@ -1165,6 +1165,7 @@ footer .p-copyright {
 
 
 #competitive-analysis-support-content .feature-bar {
+    background-image:url(../images/topography-pattern.svg);
     padding-left: 10%;
     padding-right: 25%;
     padding-top: 1em;
@@ -1727,13 +1728,13 @@ footer h6, footer h3, footer p {
       padding-bottom: 2em;
   }
 
-  #problem-solution h5 {
-      margin-bottom: 1em;
-      margin-top: auto;
+  #problem-solution h6 {
+      margin-bottom: 1.5em;
   }
 
-  #problem-solution p {
-      margin-top: .5em;
+  #problem-solution h5 {
+      margin-bottom: .5em;
+      margin-top: auto;
   }
 
   #problem-solution .box-content {
