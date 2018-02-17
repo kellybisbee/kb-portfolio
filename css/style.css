@@ -987,7 +987,6 @@ footer .p-copyright {
 
 #problem-solution h5 {
     margin-bottom: 1.25em;
-    margin-top: auto;
 }
 
 #problem-solution p {
@@ -1144,7 +1143,7 @@ footer .p-copyright {
 }
 
 #persona {
-    background-image: url(../images/persona-image-compressed.png);
+    background-image: url('../images/persona-image-compressed.png');
     background-repeat: no-repeat;
     max-width: 855px;
     height: 100%;
@@ -1165,7 +1164,7 @@ footer .p-copyright {
 
 
 #competitive-analysis-support-content .feature-bar {
-    background-image:url(../images/topography-pattern.svg);
+    background-image: url('../images/topography-pattern.svg');
     padding-left: 10%;
     padding-right: 25%;
     padding-top: 1em;
