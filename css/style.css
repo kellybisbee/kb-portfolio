@@ -1034,6 +1034,10 @@ footer .p-copyright {
     margin-top: -4.5em;
 }
 
+.section-intro {
+    background-color: white;
+}
+
 .section-intro h3 {
     z-index: 0;
     padding-left: 10%;
