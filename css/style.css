@@ -965,7 +965,6 @@ footer .p-copyright {
 }
 
 .highlight-bar {
-    background-image:url(../images/topography-pattern.svg);
     background-color: rgba(250, 130, 90, 0.8);
     width: 100%;
     height: 8em;
@@ -1036,7 +1035,7 @@ footer .p-copyright {
 }
 
 .section-intro {
-    background-image:url(../images/map-details.svg);
+    background-image: url('../images/topography-pattern.svg');
     background-repeat: no-repeat;
 }
 
