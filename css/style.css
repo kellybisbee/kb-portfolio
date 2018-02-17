@@ -531,6 +531,16 @@ span {
     color: #2E2E2E;
 }
 
+.problem-solution-title {
+    font-family: 'Unica One', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2%;
+    font-size: 1.25em;
+    color: #2E2E2E;
+    margin-top: 0;
+}
+
 nav a {
     font-family: lato-light;
     font-size: 0.8em;
@@ -985,12 +995,8 @@ footer .p-copyright {
     align-items: center;
 }
 
-#problem-solution .box-content h6 {
-    margin-bottom: 1.5em;
-}
-
-
 #problem-solution h5 {
+    margin-top: 1.5em;
     margin-bottom: .5em;
 }
 
