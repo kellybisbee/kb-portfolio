@@ -1474,6 +1474,11 @@ footer h6, footer h3, footer p {
       width: 78%;
     }
 
+    .section-intro {
+        background-image: url(../images/map-details.png);
+        background-repeat: no-repeat;
+    }
+
     .sub-section-title-bar {
         width: 58%;
     }
@@ -1764,11 +1769,6 @@ footer h6, footer h3, footer p {
       margin-top: -14em;
       padding-left: 144px;
       margin-right: 0;
-  }
-
-  .section-intro {
-      background-image: url(../images/map-details.png);
-      background-repeat: no-repeat;
   }
 
   #wireframes-support-content #middle-wireframe {
