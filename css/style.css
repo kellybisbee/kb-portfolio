@@ -985,9 +985,10 @@ footer .p-copyright {
     align-items: center;
 }
 
-#problem-solution h6 {
+#problem-solution .box-content h6 {
     margin-bottom: 1.5em;
 }
+
 
 #problem-solution h5 {
     margin-bottom: .5em;
