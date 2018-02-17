@@ -1034,11 +1034,6 @@ footer .p-copyright {
     margin-top: -4.5em;
 }
 
-.section-intro {
-    background:url(../images/map-details.png);
-    background-repeat: no-repeat;
-}
-
 .section-intro h3 {
     z-index: 0;
     padding-left: 10%;
@@ -1765,6 +1760,11 @@ footer h6, footer h3, footer p {
       margin-top: -14em;
       padding-left: 144px;
       margin-right: 0;
+  }
+
+  .section-intro {
+      background:url(../images/map-details.png);
+      background-repeat: no-repeat;
   }
 
   #wireframes-support-content #middle-wireframe {
