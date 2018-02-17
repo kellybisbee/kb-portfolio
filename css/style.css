@@ -965,7 +965,6 @@ footer .p-copyright {
 }
 
 .highlight-bar {
-    background-image:url(../images/topography-pattern.svg);
     background-color: rgba(250, 130, 90, 0.8);
     width: 100%;
     height: 8em;
