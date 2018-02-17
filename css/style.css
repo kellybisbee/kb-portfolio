@@ -1728,11 +1728,11 @@ footer h6, footer h3, footer p {
       padding-bottom: 2em;
   }
 
-  #problem-solution h6 {
+.box-content h6 {
       margin-bottom: 1.5em;
   }
 
-  #problem-solution h5 {
+.box-content h5 {
       margin-bottom: .5em;
   }
 
