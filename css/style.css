@@ -1042,6 +1042,7 @@ footer .p-copyright {
 .section-intro h3 {
     z-index: 0;
     padding-left: 10%;
+    color: green;
 }
 
 .section-intro p {
