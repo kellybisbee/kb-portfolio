@@ -1218,6 +1218,10 @@ footer .p-copyright {
     padding-right: 1em;
 }
 
+.stories-box li {
+    padding-bottom: .5em;
+}
+
 #user-flow-support-content {
     display: block;
     margin-top: 2em;
@@ -1642,7 +1646,7 @@ footer h6, footer h3, footer p {
       padding-bottom: 1em;
       padding-left: 4em;
       padding-right: 1em;
-      margin-right: 4em;
+      margin-right: 2em;
   }
 
   #user-stories-support-content #stories-box-right {
@@ -1650,9 +1654,9 @@ footer h6, footer h3, footer p {
       grid-column-end: 6;
       grid-row-start: 2;
       margin-top: -6em;
-      margin-left: -6em;
+      margin-left: -4em;
       padding-right: 1em;
-      margin-right: -4em;
+      margin-right: -6em;
   }
 
   #user-flow-support-content {
