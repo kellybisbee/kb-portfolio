@@ -964,19 +964,6 @@ footer .p-copyright {
     grid-column-start: 2;
 }
 
-@supports not (display: grid) {
-  .intro-content {
-      display: inline-block;
-      margin-left: 10%;
-  }
-
-  .intro-content p {
-      margin-bottom: 1em;
-      padding-right: 4em;
-  }
-
-}
-
 .highlight-bar {
     background-color: rgba(250, 130, 90, 0.8);
     width: 100%;
@@ -1846,6 +1833,18 @@ footer h6, footer h3, footer p {
   #mockups-support-content #bottom-caption {
       margin-left: 8em;
       margin-right: -12em;
+  }
+}
+
+@supports not (display: grid) {
+  .intro-content {
+      display: inline-block;
+      margin-left: 10%;
+  }
+
+  .intro-content p {
+      margin-bottom: 2em;
+      padding-right: 20%;
   }
 
 }
