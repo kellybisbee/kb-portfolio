@@ -964,6 +964,18 @@ footer .p-copyright {
     grid-column-start: 2;
 }
 
+@supports not (display: grid) {
+  .intro-content {
+      display: inline-block;
+      margin-left: 10%;
+  }
+
+  .intro-content p {
+      margin-bottom: 1em;
+  }
+
+}
+
 .highlight-bar {
     background-color: rgba(250, 130, 90, 0.8);
     width: 100%;
