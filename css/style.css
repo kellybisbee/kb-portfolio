@@ -972,6 +972,7 @@ footer .p-copyright {
 
   .intro-content p {
       margin-bottom: 1em;
+      padding-right: 4em;
   }
 
 }
@@ -986,6 +987,7 @@ footer .p-copyright {
 
 #case-study-intro img {
     z-index: 0;
+    max-width: 100%;
 }
 
 #case-study-intro .btn {
@@ -1234,6 +1236,10 @@ footer .p-copyright {
     margin-top: 2em;
 }
 
+#user-flow-support-content img {
+    max-width: 100%;
+}
+
 #pen-and-paper-support-content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -1263,6 +1269,10 @@ footer .p-copyright {
     margin-left: 10%;
     margin-right: 2em;
     margin-bottom: 1em;
+}
+
+#wireframes-support-content {
+    max-width: 100%;
 }
 
 #wireframes-support-content #middle-wireframe {
@@ -1661,6 +1671,10 @@ footer h6, footer h3, footer p {
   #user-flow-support-content {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
+  }
+
+  #user-flow-support-content img {
+      max-width: none;
   }
 
 
