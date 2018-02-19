@@ -1836,7 +1836,7 @@ footer h6, footer h3, footer p {
   }
 }
 
-@supports not (display: grid) {
+/*@supports not (display: grid) {
   .intro-content {
       display: inline-block;
       margin-left: 10%;
@@ -1847,4 +1847,4 @@ footer h6, footer h3, footer p {
       padding-right: 20%;
   }
 
-}
+}*/
