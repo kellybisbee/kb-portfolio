@@ -1814,6 +1814,7 @@ footer h6, footer h3, footer p {
     margin-left: -12em;
     margin-right: 8em;
     margin-top: 5em;
+    z-index: 0;
   }
 
   #mockups-support-content #bottom-caption {
