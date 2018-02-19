@@ -1297,34 +1297,7 @@ footer .p-copyright {
     align-items: center;
 }
 
-/*#mockups-support-content {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-
 #mockups-support-content img {
-    grid-column-start: 2;
-}
-
-#mockups-support-content p {
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-#mockups-support-content #bottom-mockup-image {
-    grid-row-start: 3;
-    grid-column-start: 2;
-}
-
-#mockups-support-content #bottom-caption {
-    grid-row-start: 4;
-    grid-column-start: 2;
-}*/
-
-#mockups-support-content img {
-    position: relative;
     max-width: 100%;
 }
 
