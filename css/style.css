@@ -1292,6 +1292,13 @@ footer .p-copyright {
 
 #mockups-support-content {
     margin-top: 2em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/*#mockups-support-content {
+    margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -1314,14 +1321,20 @@ footer .p-copyright {
 #mockups-support-content #bottom-caption {
     grid-row-start: 4;
     grid-column-start: 2;
+}*/
+
+#mockups-support-content img {
+    position: relative;
+    max-width: 100%;
 }
 
 #mockups-support-content p {
   background-color: rgba(247, 164, 136, 0.2);
-  padding-left: 4em;
+  padding-left: 10%;
   padding-right: 4em;
   padding-top: 2em;
-  margin-bottom: auto;
+  margin-bottom: 4em;
+  margin-top: 1em;
   padding-bottom: 2em;
 }
 
@@ -1404,6 +1417,12 @@ footer h6, footer h3, footer p {
 
   #persona p {
       margin-top: 12em;
+  }
+
+  #mockups-support-content p {
+      padding-left: 4em;
+      margin-left: 20%;
+      margin-right: 20%;
   }
 }
 
@@ -1598,7 +1617,9 @@ footer h6, footer h3, footer p {
   }
 
   .sub-section-content aside {
-      display:inline-block;
+      display: inline-block;
+      background-image:url(../images/app-graph-pattern.png);
+      background-repeat: no-repeat;
   }
 
   .section-intro p {
@@ -1792,6 +1813,7 @@ footer h6, footer h3, footer p {
 
   #mockups-support-content img {
       grid-column-start: 2;
+      max-width: none;
   }
 
   #mockups-support-content p {
