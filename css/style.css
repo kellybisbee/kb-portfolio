@@ -721,7 +721,7 @@ nav {
 }
 
 .feature-bar {
-    background-color: rgba(250, 130, 90, 0.8);
+    background: linear-gradient(180deg, rgba(227, 120, 84, 0.4) 80%, rgba(255, 255, 255, 0) 100%), rgba(247, 164, 136, 0.8);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -729,6 +729,7 @@ nav {
 
 #homepage .feature-bar {
     margin: auto;
+    background: rgba(250, 130, 90, 0.8);
 }
 
 .feature-bar h3 {
@@ -871,10 +872,12 @@ footer {
 
 footer h3 {
     margin-bottom: auto;
+    padding-left: 10%;
 }
 
 footer p {
-    padding-bottom: 4em;
+    margin-bottom: 3em;
+    padding-left: 10%;
 }
 
 footer .email {
@@ -884,9 +887,29 @@ footer .email {
     border-bottom: 10px solid rgba(250, 130, 90, 0.8);
 }
 
+footer .social-media {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+}
+
+footer a:hover {
+    color: rgba(104, 196, 216, 1.0);
+}
+
 footer .p-copyright {
     font-size: 12px;
-    padding-bottom: .5em;
+    margin-bottom: 1em;
+    padding-left: 0;
 }
 
 .case-study footer {
@@ -965,6 +988,7 @@ footer .p-copyright {
 }
 
 .highlight-bar {
+    background-image: url(../images/topography-pattern.svg);
     background-color: rgba(250, 130, 90, 0.8);
     width: 100%;
     height: 8em;
@@ -1181,7 +1205,8 @@ footer .p-copyright {
 
 
 #competitive-analysis-support-content .feature-bar {
-    background-image: url('../images/topography-pattern.svg');
+    background-image: url(../images/topography-pattern.svg);
+    background-color: rgba(250, 130, 90, 0.8);
     padding-left: 10%;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -1410,6 +1435,17 @@ footer h6, footer h3, footer p {
       margin-left: 20%;
       margin-right: 20%;
   }
+}
+
+@media (min-width: 610px){
+
+    footer h3 {
+        padding-left: 0;
+    }
+
+    footer p {
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 650px){
@@ -1852,3 +1888,8 @@ footer h6, footer h3, footer p {
   }
 
 }*/
+
+::selection {
+    color: #2e2e2e;
+    background: rgba(104, 196, 216, 1.0);
+}
