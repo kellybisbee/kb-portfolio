@@ -1898,5 +1898,5 @@ footer h6, footer h3, footer p {
 
 ::selection {
     color: #2e2e2e;
-    background: #d5d5d5;
+    background: rgba(104, 196, 216, 1.0);
 }
