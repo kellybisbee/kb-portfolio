@@ -1384,16 +1384,19 @@ footer .p-copyright {
 
 #other-work-content .case-study-box {
     padding-top: 1em;
+    max-width: 550px;
 }
 
 #other-work-content .box-content {
     margin-right: 0;
+    margin-left: 0;
     padding-right: 4em;
     padding-left: 4em;
     background-color: rgba(255,255,255,0.95);
 }
 
 #other-work-content h3 {
+    padding-left: 10%;
     margin-bottom: 0.5em;
 }
 
@@ -1545,6 +1548,10 @@ footer h6, footer h3, footer p {
 
     #user-stories-support-content #stories-box-right {
         grid-column-end: 6;
+    }
+
+    #other-work-content h3 {
+        padding-left: 0;
     }
 }
 
