@@ -882,6 +882,13 @@ footer h3 {
 footer p {
     margin-bottom: 3em;
     padding-left: 10%;
+    display: inherit;
+}
+
+footer p a {
+    text-decoration: none;
+    padding-left: .25em;
+    padding-right: .25em;
 }
 
 footer .email {
@@ -898,7 +905,7 @@ footer .social-media {
   margin-bottom: 2em;
 }
 
-footer a {
+footer .social-media a {
     text-decoration: none;
     color: #ffffff;
     padding-left: 1em;
@@ -906,7 +913,7 @@ footer a {
     position: relative;
 }
 
-footer a:hover {
+footer .social-media a:hover {
     color: rgba(104, 196, 216, 1.0);
 }
 
