@@ -596,10 +596,14 @@ a {
     background: linear-gradient(90deg, rgba(3, 127, 155, 0.85) 0%, rgba(4, 156, 190, 0.765) 79.01%, rgba(4, 156, 190, 0.765) 100%), #037F9B;
 }
 
+.btn:hover {
+    background: linear-gradient(90deg, rgba(3, 127, 155, 0.85) 0%, rgba(4, 156, 190, 0.765) 40%, rgba(4, 156, 190, 0.765) 40%), rgba(3, 127, 155, 0.4);
+}
+
 .view-more-btn {
     text-decoration: none;
     color: #2e2e2e;
-    background: linear-gradient(90deg, rgba(4, 156, 190, 0.36) 0%, rgba(255, 255, 255, 0) 40%), rgba(4, 156, 190, 0.4);
+    background: linear-gradient(90deg, rgba(4, 156, 190, 0.36) 0%, rgba(255, 255, 255, 0) 87.85%), rgba(4, 156, 190, 0.6);
     padding: 10px 0 0 80px;
     display: inline-block;
     text-align: left;
@@ -614,7 +618,7 @@ a {
 }
 
 .view-more-btn:hover {
-    background: linear-gradient(90deg, rgba(4, 156, 190, 0.36) 0%, rgba(255, 255, 255, 0) 87.85%), rgba(4, 156, 190, 0.6);
+    background: linear-gradient(90deg, rgba(4, 156, 190, 0.36) 0%, rgba(255, 255, 255, 0) 40%), rgba(4, 156, 190, 0.4);
     padding-top: 15px;
 }
 
