@@ -893,7 +893,6 @@ footer p {
 
 footer .email {
     text-decoration: none;
-    padding-left: .25em;
     padding-right: .25em;
     color: white;
     font-family: 'Lato', sans-serif;
@@ -1333,15 +1332,8 @@ footer .p-copyright {
     width: 100%;
 }
 
-#style-guide-support-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 10%;
-}
-
 #style-guide-support-content img {
-    grid-column-start: 1;
-    max-width: 200%;
+    max-width: 100%;
     margin-top: 2em;
 }
 
@@ -1466,6 +1458,10 @@ footer h6, footer h3, footer p {
     footer p {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    footer .email {
+      padding-left: .25em;
     }
 }
 
@@ -1770,11 +1766,17 @@ footer h6, footer h3, footer p {
       grid-column-start: 1;
   }
 
+  #style-guide-support-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   #style-guide-support-content img {
       grid-column-start: 3;
       margin-top: -20em;
       margin-left: -9.5em;
       padding-left: 0;
+      max-width: none;
   }
 
 }
