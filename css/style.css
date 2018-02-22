@@ -887,18 +887,17 @@ footer h3 {
 footer p {
     margin-bottom: 3em;
     padding-left: 10%;
-    display: inherit;
+    padding-right: 10%;
 }
 
-footer p a {
+
+footer .email {
     text-decoration: none;
     padding-left: .25em;
     padding-right: .25em;
-}
-
-footer .email {
     color: white;
-    font-family: lato-bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     letter-spacing: .05em;
     border-bottom: 10px solid rgba(250, 130, 90, 0.8);
 }
@@ -1466,6 +1465,7 @@ footer h6, footer h3, footer p {
 
     footer p {
         padding-left: 0;
+        padding-right: 0;
     }
 }
 
