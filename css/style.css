@@ -1773,7 +1773,6 @@ footer h6, footer h3, footer p {
   #style-guide-support-content img {
       grid-column-start: 3;
       margin-top: -20em;
-      margin-left: -9.5em;
       padding-left: 0;
       max-width: none;
   }
