@@ -1230,7 +1230,8 @@ footer .p-copyright {
 }
 
 #competitive-analysis-support-content .feature-bar p {
-    font-family: lato-bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     margin-top: 0;
 }
 
@@ -1291,7 +1292,8 @@ footer .p-copyright {
     padding-right: 25%;
     padding-top: 2em;
     padding-bottom: 2em;
-    font-family: lato-bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 }
 
 #wireframes-support-content {
