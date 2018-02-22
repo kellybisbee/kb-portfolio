@@ -555,21 +555,6 @@ nav a {
     z-index: 0;
 }
 
-/*nav a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 1.85em;
-  width: 0%;
-  border-bottom: 10px solid rgba(104, 196, 216, 0.6);
-  transition: 0.2s;
-  z-index: auto;
-}
-
-nav a:hover:after {
-    width: 60%;
-}*/
-
 nav a:hover {
     color: rgba(104, 196, 216, 1.0);
     font-weight: 500;
