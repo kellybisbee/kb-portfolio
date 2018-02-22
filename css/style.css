@@ -555,7 +555,7 @@ nav a {
     z-index: 0;
 }
 
-nav a:after {
+/*nav a:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -568,10 +568,11 @@ nav a:after {
 
 nav a:hover:after {
     width: 60%;
-}
+}*/
 
 nav a:hover {
-    font-weight: 700;
+    color: rgba(104, 196, 216, 1.0);
+    font-weight: 500;
     z-index: 0;
 }
 
@@ -662,7 +663,6 @@ a {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    border: 2px solid #ffffff;
     background: rgba(255, 255, 255, 0.0);
     margin-bottom: 1em;
     padding: 10px;
@@ -670,8 +670,9 @@ a {
 }
 
 .back-top-btn:hover {
-    background: rgba(255, 255, 255, 1.0);
-    color: #2e2e2e;
+    background: rgba(255, 255, 255, 0.0);
+    color: rgba(104, 196, 216, 1.0);
+    font-weight: 500;
 }
 
  /*Homepage style*/
@@ -851,7 +852,9 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: -2em;
+    margin-bottom: 2em;
 }
+
 
 #about div {
     grid-column-start: 1;
@@ -869,8 +872,8 @@ nav {
 
 #about div a {
     margin-top: 2em;
-    margin-bottom: 2em;
 }
+
 
 #about aside {
     grid-column-start:2;
@@ -1600,7 +1603,6 @@ footer h6, footer h3, footer p {
 
   #about div a {
       margin-top: 2em;
-      margin-bottom: 2em;
   }
 
   #about aside {
