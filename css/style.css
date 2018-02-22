@@ -652,7 +652,7 @@ a {
 }
 
 .back-top-btn:hover {
-    background: rgba(255, 255, 255, 0.0);
+    background: none;
     color: rgba(104, 196, 216, 1.0);
     font-weight: 500;
 }
