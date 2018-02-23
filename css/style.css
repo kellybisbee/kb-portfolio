@@ -1104,7 +1104,7 @@ footer .p-copyright {
 
 .section-intro p {
     padding-left: 10%;
-    padding-right: 25%;
+    padding-right: 10%;
     font-size: 1.25em;
     padding-top: 1em;
     line-height: 1.8;
@@ -1120,7 +1120,7 @@ footer .p-copyright {
 
 .sub-section p {
     padding-left: 10%;
-    padding-right: 25%;
+    padding-right: 10%;
     padding-top: 1em;
 }
 
@@ -1305,7 +1305,7 @@ footer .p-copyright {
 
 .feature-bar p {
     padding-left: 10%;
-    padding-right: 25%;
+    padding-right: 10%;
     padding-top: 2em;
     padding-bottom: 2em;
     font-family: 'Lato', sans-serif;
@@ -1450,6 +1450,10 @@ footer h6, footer h3, footer p {
       grid-column-end: 5;
   }
 
+  .feature-bar p {
+      padding-right: 25%;
+  }
+
   #user-survey-support-content .stats-box-right {
       grid-column-start: 1;
       grid-column-end: 5;
@@ -1561,6 +1565,16 @@ footer h6, footer h3, footer p {
     .section-intro {
         background-image: url(../images/map-details.png);
         background-repeat: no-repeat;
+    }
+
+    .section-intro p {
+        padding-left: 10%;
+        padding-right: 35%;
+    }
+
+    .sub-section p {
+        padding-left: 10%;
+        padding-right: 35%;
     }
 
     .sub-section-title-bar {
