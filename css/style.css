@@ -709,16 +709,22 @@ nav {
     margin-top: .5em;
 }
 
-#hero > span {
-    text-align: center;
+#hero span {
+    text-align: left;
     margin-top: 0;
+    margin-bottom: 2em;
+}
+
+#hero span p {
+    margin-right: -1em;
+    font-size: .8em;
 }
 
 #hero h5 {
     margin-bottom: .5em;
     margin-top: .5em;
-    font-family: lato-light;
     font-weight: 300;
+    text-align: center;
 }
 
 .fa-plus {
@@ -736,6 +742,7 @@ nav {
 #homepage .feature-bar {
     margin: auto;
     background: rgba(250, 130, 90, 0.8);
+    padding-left: 10%;
 }
 
 .feature-bar h3 {
@@ -1492,16 +1499,24 @@ footer h6, footer h3, footer p {
       font-size:90px;
     }
 
-    #hero > span {
+    #hero span {
       padding-top: 16%;
       padding-left: 50px;
-      text-align: left;
+    }
+
+    #hero span p {
+      margin-right: 0;
+      font-size: 1em;
     }
 
     #hero h5 {
-      font-family: lato-light;
       font-weight: 300;
       margin-bottom: 1em;
+      text-align: left;
+    }
+
+    #homepage .feature-bar {
+      padding-left: 0;
     }
 
     /*About page*/
