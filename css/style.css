@@ -755,7 +755,6 @@ nav {
 #work {
     background-image:url(../images/work-background-topography.png);
     height: 100%;
-    display: flex;
     flex-flow: column;
     align-items: center;
     padding-bottom: 6em;
@@ -963,7 +962,7 @@ footer .p-copyright {
     padding-top: 2em;
 }
 
-#intro-bar {
+.intro-bar {
     background-color: rgba(250, 130, 90, 0.8);
     width: 100%;
     height: 26px;
@@ -1453,6 +1452,10 @@ footer h6, footer h3, footer p {
 
 @media (min-width: 650px){
 
+  #work {
+      display: flex;
+  }
+
   .case-study-box {
         min-width: 650px;
     }
@@ -1510,7 +1513,7 @@ footer h6, footer h3, footer p {
 
     /*Case study*/
 
-    #intro-bar {
+    .intro-bar {
         width: 78%;
     }
 
