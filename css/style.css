@@ -975,6 +975,13 @@ footer .p-copyright {
     margin-top: -5em;
 }
 
+.summary {
+    font-size: 1.25em;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2em;
+}
+
 .intro-content {
     display: inline-block;
     margin-left: 10%;
@@ -1529,6 +1536,11 @@ footer h6, footer h3, footer p {
 
     .intro-bar {
         width: 78%;
+    }
+
+    .summary {
+      padding-left: 22%;
+      padding-right: 22%;
     }
 
     #problem-solution > #problem {
