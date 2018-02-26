@@ -1222,8 +1222,8 @@ footer .p-copyright {
 
 
 #competitive-analysis-support-content .feature-bar {
-    background-image: url(../images/topography-pattern.svg);
-    background-color: rgba(250, 130, 90, 0.8);
+    background-image: url(../images/other-work-pattern-10.svg);
+    background-color: rgba(247, 164, 136, 0.2);
     margin-top: 2em;
     margin-bottom: 1em;
     text-align: left;
@@ -1235,36 +1235,29 @@ footer .p-copyright {
     margin-top: 0;
 }
 
+#user-stories-aside {
+    margin-top: -15.5em;
+}
+
 #user-stories-support-content {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     margin-top: 2em;
 }
 
 .stories-box {
-    background-color: rgba(255, 207, 191, 0.7);
-    grid-column-start: 1;
-    grid-column-end: 7;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-right: 1em;
-}
-
-#user-stories-support-content #stories-box-right {
     background-color: rgba(247, 164, 136, 0.2);
     grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    margin-top: 2em;
-    padding-right: 1em;
-}
-
-.stories-box p {
+    grid-column-end: 2;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-flow: column;
     padding-left: 10%;
 }
 
 .stories-box ul {
-    padding-left: 10%;
+    margin-left: 1.5em;
+    padding-right: 2em;
 }
 
 .stories-box ul li {
@@ -1600,10 +1593,6 @@ footer h6, footer h3, footer p {
         margin-top: 14em;
     }
 
-    .stories-box {
-        grid-column-end: 6;
-    }
-
     #user-stories-support-content #stories-box-right {
         grid-column-end: 6;
     }
@@ -1770,22 +1759,10 @@ footer h6, footer h3, footer p {
 
     .stories-box {
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 7;
         padding-top: 1em;
         padding-bottom: 1em;
-        padding-left: 12%;
-        padding-right: 1em;
-        margin-right: 2em;
-    }
-
-    #user-stories-support-content #stories-box-right {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 2;
-        margin-top: -6em;
-        margin-left: -4em;
-        padding-right: 1em;
-        margin-right: -6em;
+        flex-flow: row;
     }
 
     #pen-and-paper-support-content {
