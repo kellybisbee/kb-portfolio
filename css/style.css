@@ -975,19 +975,26 @@ footer .p-copyright {
     margin-top: -5em;
 }
 
-.summary {
-    margin-top: 3em;
-    display: inline-block;
-    margin-left: 10%;
-    font-size: 1.25em;
-    padding-right: 10%;
+
+#summary {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 2em;
+    background-image:url(../images/intro-image-80-cropped-cmp.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#summary .feature-bar {
+    margin-bottom: 8em;
 }
 
 
 .intro-content {
     display: inline-block;
     margin-left: 10%;
-    margin-top: 4em;
+    margin-top: 8em;
+    margin-bottom: -2em;
 }
 
 .intro-content p {
@@ -1011,12 +1018,11 @@ footer .p-copyright {
 }
 
 #case-study-intro .btn {
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin-top: -5em;
 }
 
 #problem-solution {
-    margin-top: 6em;
+    margin-top: 4em;
     background-image: url(../images/prob-solution-background-image-compressed.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1459,6 +1465,10 @@ footer h6, footer h3, footer p {
 
 @media (min-width: 610px){
 
+    #summary .feature-bar {
+        margin-top: 2em;
+  }
+
     footer h3 {
         padding-left: 0;
     }
@@ -1540,11 +1550,6 @@ footer h6, footer h3, footer p {
         width: 78%;
     }
 
-    .summary {
-      padding-left: 12%;
-      padding-right: 22%;
-    }
-
     #problem-solution > #problem {
         margin-right: 22%;
         margin-left: 22%;
@@ -1606,6 +1611,28 @@ footer h6, footer h3, footer p {
     }
 }
 
+@media (min-width: 800px) {
+
+    #summary .feature-bar {
+        margin-top: 4em;
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    #summary .feature-bar p {
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 980px) {
+
+    #summary .feature-bar {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
 @media (min-width: 1200px) {
 
     #sub-feature-bar {
@@ -1637,6 +1664,14 @@ footer h6, footer h3, footer p {
     }
 
   /*Case Study*/
+
+  #summary .feature-bar {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      margin-top: 6em;
+      margin-left: -6em;
+      margin-right: -6em;
+  }
 
     .intro-content {
         padding-right: 2em;
