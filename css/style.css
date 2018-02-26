@@ -1272,12 +1272,15 @@ footer .p-copyright {
 }
 
 #user-flow-support-content {
-    display: block;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 #user-flow-support-content img {
-    max-width: 100%;
+    width: 100%;
+}
+
+#user-flow-aside {
+    margin-top: -10em;
 }
 
 #pen-and-paper-support-content {
@@ -1783,21 +1786,6 @@ footer h6, footer h3, footer p {
         margin-left: -4em;
         padding-right: 1em;
         margin-right: -6em;
-    }
-
-    #user-flow-support-content {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    #user-flow-support-content img {
-        max-width: none;
-    }
-
-    #user-flow-right {
-        grid-column-start: 4;
-        margin-left: -14em;
-        margin-top: 14em;
     }
 
     #pen-and-paper-support-content {
