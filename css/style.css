@@ -978,21 +978,17 @@ footer .p-copyright {
 #summary {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-top: 2em;
-    background-image:url(../images/intro-image.png);
+    margin-top: 4em;
+    background-image:url(../images/intro-image-final-compressed.png);
     background-repeat: repeat;
     background-size: cover;
-}
-
-#summary .feature-bar {
-    margin-bottom: 6em;
 }
 
 
 .intro-content {
     display: inline-block;
     margin-left: 10%;
-    margin-top: -2em;
+    margin-top: 2em;
     margin-bottom: -2em;
 }
 
@@ -1416,6 +1412,7 @@ footer h6, footer h3, footer p {
 
     #summary .feature-bar {
         margin-top: 2em;
+        margin-bottom: 2em;
   }
 
     footer h3 {
@@ -1554,6 +1551,7 @@ footer h6, footer h3, footer p {
 
     #summary .feature-bar {
         margin-top: 4em;
+        margin-bottom: 4em;
         grid-column-start: 2;
         grid-column-end: 6;
     }
@@ -1607,7 +1605,8 @@ footer h6, footer h3, footer p {
   #summary .feature-bar {
       grid-column-start: 3;
       grid-column-end: 5;
-      margin-top: 8em;
+      margin-top: 6em;
+      margin-bottom: 6em;
       margin-left: -6em;
       margin-right: -6em;
   }
