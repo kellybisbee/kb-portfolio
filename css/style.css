@@ -975,22 +975,14 @@ footer .p-copyright {
     margin-top: -5em;
 }
 
-#intro-summary {
-    margin-top: 4em;
+.summary {
+    margin-top: 3em;
     display: inline-block;
     margin-left: 10%;
-}
-
-.summary {
     font-size: 1.25em;
     padding-right: 10%;
 }
 
-.span-summary {
-    align-self: flex-start;
-    position: relative;
-    margin-top: 4em;
-}
 
 .intro-content {
     display: inline-block;
@@ -1549,9 +1541,8 @@ footer h6, footer h3, footer p {
     }
 
     .summary {
-      padding-left: 13%;
+      padding-left: 12%;
       padding-right: 22%;
-      margin-top: -1.4em;
     }
 
     #problem-solution > #problem {
