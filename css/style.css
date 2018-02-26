@@ -979,7 +979,7 @@ footer .p-copyright {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 2em;
-    background-image:url('../images/intro-image-80-cropped-cmp.png');
+    background-image:url(../images/intro-image-cropped-cmp.png);
     background-repeat: repeat;
     background-size: cover;
 }
