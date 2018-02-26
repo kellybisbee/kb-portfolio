@@ -992,7 +992,7 @@ footer .p-copyright {
 .intro-content {
     display: inline-block;
     margin-left: 10%;
-    margin-top: 8em;
+    margin-top: 4em;
     margin-bottom: -2em;
 }
 
@@ -1150,27 +1150,18 @@ footer .p-copyright {
 
 #user-survey-support-content {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     margin-top: 2em;
 }
 
 .stats-box {
-    background-color: rgba(255, 207, 191, 0.7);
-    grid-column-start: 1;
-    grid-column-end: 7;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-right: -1em;
-}
-
-#user-survey-support-content .stats-box-right {
     background-color: rgba(247, 164, 136, 0.2);
     grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    margin-top: 1em;
-    margin-left: -1em;
-
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .stats-box .stats {
@@ -1179,20 +1170,13 @@ footer .p-copyright {
     padding-right: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-bottom: 1em;
+    margin-right: 2em;
 }
 
-.stats-box .stats-right {
-    margin-left: 4em;
-    margin-right: 4em;
+#user-survey-support-content .fa-ul {
+    margin-left: 0;
 }
-
-.stats-box p:last-child {
-    padding-left: 4em;
-    padding-right: 4em;
-}
-
 
 #user-persona-support-content {
     margin-top: 2em;
@@ -1221,18 +1205,8 @@ footer .p-copyright {
 }
 
 
-#competitive-analysis-support-content .feature-bar {
-    background-image: url(../images/other-work-pattern-10.svg);
-    background-color: rgba(247, 164, 136, 0.2);
-    margin-top: 2em;
-    margin-bottom: 1em;
-    text-align: left;
-}
-
-#competitive-analysis-support-content .feature-bar p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    margin-top: 0;
+#competitive-analysis-btn {
+    margin-top: 1em;
 }
 
 #user-stories-aside {
@@ -1248,8 +1222,8 @@ footer .p-copyright {
     background-color: rgba(247, 164, 136, 0.2);
     grid-column-start: 1;
     grid-column-end: 2;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     display: flex;
     flex-flow: column;
     padding-left: 10%;
@@ -1432,19 +1406,13 @@ footer h6, footer h3, footer p {
 
 @media (min-width: 500px){
 
-  .stats-box {
-      grid-column-start: 1;
-      grid-column-end: 5;
-  }
 
   .feature-bar p {
       padding-right: 25%;
   }
 
-  #user-survey-support-content .stats-box-right {
-      grid-column-start: 1;
-      grid-column-end: 5;
-
+  .stats-box .stats {
+      max-width: 300px;
   }
 
   #persona p {
@@ -1578,16 +1546,6 @@ footer h6, footer h3, footer p {
         width: 58%;
     }
 
-    .stats-box {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    #user-survey-support-content .stats-box-right {
-        grid-column-start: 1;
-        grid-column-end: 3;
-
-    }
 
     #persona p {
         margin-top: 14em;
@@ -1671,6 +1629,7 @@ footer h6, footer h3, footer p {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 8em;
         margin-left: 8em;
+        margin-top: 8em;
     }
 
     .intro-content p {
@@ -1736,33 +1695,32 @@ footer h6, footer h3, footer p {
         padding-right: 45%;
     }
 
-    #user-survey-support-content .stats-box-right {
-        grid-column-start: 3;
-        grid-column-end: 5;
+    #user-survey-aside {
         margin-top: -12em;
-        margin-right: 0;
+    }
+
+    .stats-box {
+        flex-direction: row;
+    }
+
+    .stats-box p {
+        padding-right: 10%;
+    }
+
+    .stats-left {
+        margin-right: 8em;
+    }
+
+    .stats-right .fa-ul {
+        margin-right: 4em;
     }
 
     .stats-box .stats {
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-left: 4em;
-        margin-right: 12em;
-    }
-
-    .stats-box .stats-right {
-        margin-left: 10em;
-        margin-right: 6em;
+        margin-right: 8em;
     }
 
     .stories-box {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        flex-flow: row;
+        flex-direction: row;
     }
 
     #pen-and-paper-support-content {
