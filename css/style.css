@@ -660,7 +660,7 @@ a {
  /*Homepage style*/
 
 #homepage header {
-    background-image:url(../images/intro-background1x-noblur.png);
+    background-image:url(../images/work-background-topography.png);
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1464,12 +1464,14 @@ footer h6, footer h3, footer p {
 
     #hero h1 {
       padding-left: 220px;
-      font-size:90px;
+      padding-right: 50px;
+      text-align: left;
     }
 
     #hero span {
-      padding-top: 16%;
+      padding-top: 5%;
       padding-left: 50px;
+      padding-right: 20%;
     }
 
     #hero span p {
