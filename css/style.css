@@ -724,6 +724,11 @@ nav {
     font-size: .8em;
 }
 
+.corgi {
+    display: none;
+}
+
+
 #hero h5 {
     margin-bottom: .5em;
     margin-top: .5em;
@@ -1768,6 +1773,10 @@ footer h6, footer h3, footer p {
 }
 
 @media (min-width: 1440px) {
+
+    #corgi-text:hover ~ .corgi {
+        display: flex;
+    }
 
     #work {
         display: grid;
