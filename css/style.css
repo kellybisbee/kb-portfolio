@@ -659,9 +659,13 @@ a {
 
  /*Homepage style*/
 
-#homepage header {
+ #homepage {
     background-image:url(../images/work-background-topography.png);
     background-size: cover;
+    background-repeat: repeat;
+ }
+
+#homepage header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -753,7 +757,6 @@ nav {
 
 
 #work {
-    background-image:url(../images/work-background-topography.png);
     height: 100%;
     flex-flow: column;
     align-items: center;
@@ -834,7 +837,9 @@ nav {
 }
 
 #about-page {
-    height: 100%;
+    background-image:url(../images/work-background-topography.png);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 #about-page header {
