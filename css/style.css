@@ -1775,7 +1775,7 @@ footer h6, footer h3, footer p {
 @media (min-width: 1440px) {
 
     #corgi-text:hover ~ .corgi {
-        display: flex;
+        display: inline-block;
     }
 
     #work {
