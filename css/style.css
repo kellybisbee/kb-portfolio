@@ -989,9 +989,13 @@ footer .p-copyright {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 4em;
-    background-image:url(../images/intro-image-final-compressed.png);
-    background-repeat: repeat;
-    background-size: cover;
+}
+
+#intro-summary {
+  font-size: 1.5em;
+padding-left: 20%;
+padding-right: 20%;
+margin-top: 2em;
 }
 
 
