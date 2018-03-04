@@ -1490,7 +1490,6 @@ footer h6, footer h3, footer p {
       padding-top: 5%;
       padding-left: 50px;
       padding-right: 20%;
-      margin-top: .5em;
       margin-bottom: 2em;
     }
 
@@ -1502,7 +1501,7 @@ footer h6, footer h3, footer p {
     #hero h5 {
       font-weight: 300;
       margin-bottom: 1em;
-      margin-top: 0;
+      margin-top: .5em;
     }
 
     #homepage .feature-bar {
