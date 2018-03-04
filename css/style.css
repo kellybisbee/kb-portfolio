@@ -985,17 +985,17 @@ footer .p-copyright {
     margin-top: -5em;
 }
 
-#summary {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+#case-study-intro img {
+    width: 100%;
     margin-top: 4em;
+    margin-bottom: 2em;
 }
 
 
 #intro-summary {
   font-size: 1.5em;
-  padding-left: 24%;
-  padding-right: 24%;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 2em;
 }
 
@@ -1325,7 +1325,7 @@ footer .p-copyright {
 }
 
 #mockups-support-content p {
-    background-color: rgba(247, 164, 136, 0.2);
+    background-color: rgba(247, 164, 136, 0.4);
     padding-left: 10%;
     padding-right: 4em;
     padding-top: 2em;
@@ -1512,6 +1512,11 @@ footer h6, footer h3, footer p {
 
 
     /*Case study*/
+
+    #intro-summary {
+      padding-left: 26%;
+      padding-right: 24%;
+    }
 
     .intro-bar {
         width: 78%;
@@ -1866,20 +1871,20 @@ footer h6, footer h3, footer p {
     #mockups-support-content img {
         grid-column-start: 2;
         max-width: none;
+        z-index: 0;
     }
 
     #mockups-support-content p {
         grid-column-start: 4;
         grid-row-start: 1;
-        padding-left: 4em;
+        padding-left: 6em;
         padding-right: 4em;
         padding-top: 2em;
         margin-bottom: auto;
         padding-bottom: 2em;
         margin-left: -12em;
         margin-right: 8em;
-        margin-top: 5em;
-        z-index: 0;
+        margin-top: 4em;
     }
 
     #mockups-support-content #bottom-mockup-image {
@@ -1892,6 +1897,10 @@ footer h6, footer h3, footer p {
         grid-column-start: 2;
         margin-left: 8em;
         margin-right: -12em;
+        padding-left: 4em;
+        padding-right: 6em;
+        margin-top: 2em;
+
     }
 }
 
