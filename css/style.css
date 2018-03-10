@@ -665,10 +665,6 @@ a {
     background-repeat: repeat;
  }
 
-#homepage header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
 
 #kb-logo {
     grid-column-start: 2;
@@ -694,10 +690,7 @@ nav {
 }
 
 #hero {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    margin-left: 10%;
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2em;
@@ -1467,6 +1460,11 @@ footer h6, footer h3, footer p {
   #header {
       background-size: auto;
   }
+
+  #homepage header {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
 
   #hero {
       grid-column-start: 1;
